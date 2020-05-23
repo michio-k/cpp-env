@@ -1,0 +1,12 @@
+version: '3'
+
+volumes:
+    code:
+
+services:
+    dev:
+        container_name: cpp-env
+        build: .
+        tty: true
+        volumes:
+            - "./code:/usr/src"            
